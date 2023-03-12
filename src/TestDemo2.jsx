@@ -1,6 +1,6 @@
 import { useEffect, createRef } from "react";
 // import qcharts from "@qcharts/core";
-import qcharts from "./qcharts-lib";
+import qcharts from "./qcharts-test";
 
 export default () => {
   const domRef = createRef();
@@ -20,10 +20,10 @@ export default () => {
       container: domRef.current,
     });
     console.log("chart----", chart);
-    chart.source(data, {
-      value: "value",
-      text: "label",
-    });
+    // chart.source(data, {
+    //   value: "value",
+    //   text: "label",
+    // });
     // const bar = new Bar({
     //   animation: {
     //     duration: 1000,
@@ -36,7 +36,7 @@ export default () => {
     // const axisLeft = new Axis({ orient: "left" })
     //   .style("axis", false)
     //   .style("scale", false);
-    chart.append([axisBottom]);
+    // chart.append([axisBottom]);
     // bar.dataset.on("mouseEvent", function (...params) {
     //   console.log(params);
     // });
