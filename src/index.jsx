@@ -1,13 +1,13 @@
 import { answer } from "./answer";
 import React from "react";
 import ReactDOM from "react-dom/client";
-import TestDemo from "./TestDemo";
+import TestDemo1 from "./TestDemo1";
 
 const App = () => {
   return (
     <div>
       the answer to the universe is {answer}
-      <TestDemo />
+      <TestDemo1 />
     </div>
   );
 };

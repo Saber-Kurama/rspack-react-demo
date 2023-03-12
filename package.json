@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@mesh.js/core": "^1.1.25",
+    "@qcharts/core": "^1.0.37",
     "react": "18",
     "react-dom": "18",
     "spritejs": "^3.8.3"

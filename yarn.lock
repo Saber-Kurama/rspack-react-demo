@@ -83,6 +83,46 @@
   resolved "https://registry.yarnpkg.com/@polka/url/-/url-1.0.0-next.21.tgz#5de5a2385a35309427f6011992b544514d559aa1"
   integrity sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==
 
+"@qcharts/core@^1.0.37":
+  version "1.0.37"
+  resolved "https://registry.yarnpkg.com/@qcharts/core/-/core-1.0.37.tgz#51c757739083e3361625d3475b1fe2bfcaa5f7f3"
+  integrity sha512-hRg3xyh7YtcCN40EBZBL/z1aOp1XFiLCqg2K2lTrYVmLkctpcJqEPwvoYtmYaRo7WUjT3fO6DCVtWyrwgp2i8Q==
+  dependencies:
+    "@qcharts/dataset" "0.0.14"
+    "@qcharts/utils" "^0.0.5"
+    "@qcharts/vnode" "0.0.17"
+    filter-clone "0.0.12"
+
+"@qcharts/dataset@0.0.14":
+  version "0.0.14"
+  resolved "https://registry.yarnpkg.com/@qcharts/dataset/-/dataset-0.0.14.tgz#c454b9b88b829c89cc38b53c152e56c444089fe0"
+  integrity sha512-H7DO9XKfoPDTdYmDf8oULoqLPJHHmkwwlDAituutgqABstZHtdfiB2G+8bgYIANAat/WDPHcwSkGLA7AhWkIng==
+  dependencies:
+    "@qcharts/utils" "^0.0.3"
+
+"@qcharts/utils@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@qcharts/utils/-/utils-0.0.1.tgz#a321fe8f6071a0b01f7fee810218dba9a6ee71ef"
+  integrity sha512-3XmVFCRIdBk2/aXhxN++185unbm1m0bx8ksZmv9X2zoTtYBg/9I6kNsOzPiMYjFdEJ+XbII8mNIRxTw8j19ujw==
+
+"@qcharts/utils@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@qcharts/utils/-/utils-0.0.3.tgz#bfc7a7c36d7d5a7ef47994e4f9d74f9589ccbc56"
+  integrity sha512-mzhA8+fFp66eD4wKaHuYDJrT+Tqx1PhxxKL/WWKMiyMCjm1sE+sitswrI7jVoNAezVx49pHaBxepmRDTBvUKtg==
+
+"@qcharts/utils@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@qcharts/utils/-/utils-0.0.5.tgz#50d8fd0831c7cff81972578e9f6537b4fdde872e"
+  integrity sha512-q7OFFfHp0wTqdqWbXy9x0HNk3KnJuXavvZyIl9W1cmOxIo0G7NLykJACQpHZ0k+icF3NhMTcrzU5yEFFt8XkaA==
+
+"@qcharts/vnode@0.0.17":
+  version "0.0.17"
+  resolved "https://registry.yarnpkg.com/@qcharts/vnode/-/vnode-0.0.17.tgz#b4fc59802ed4739ac74339752bae211e7f013123"
+  integrity sha512-d7CQpf7UotPEOFCMgEayAs5sH953ctRjgCZBpO+zIprMF882AvbOrQlu+oLskbY7OKb62DjYGLNpd5FituPpPg==
+  dependencies:
+    "@qcharts/utils" "^0.0.1"
+    filter-clone "0.0.12"
+
 "@rspack/binding-darwin-arm64@0.1.0":
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/@rspack/binding-darwin-arm64/-/binding-darwin-arm64-0.1.0.tgz#408cec7ca84b1969a1f9eb215fd5430061cf3608"
@@ -1194,6 +1234,11 @@ fill-range@^7.0.1:
   integrity sha512-qOo9F+dMUmC2Lcb4BbVvnKJxTPjCm+RRpe4gDuGrzkL7mEVl/djYSu2OdQ2Pa302N4oqkSg9ir6jaLWJ2USVpQ==
   dependencies:
     to-regex-range "^5.0.1"
+
+filter-clone@0.0.12:
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/filter-clone/-/filter-clone-0.0.12.tgz#39fd81b1c902a75f2bcde3208fae2985c78e98e3"
+  integrity sha512-7G7AGGsJZwky0FI9gkyuK3YYDfsxbJ0Kf1AjfNo5iXBDzDoS9lNaMv1AxUnnzMsTyDRJUDQjPGQoqp7YUsWC9Q==
 
 finalhandler@1.2.0:
   version "1.2.0"
