@@ -1,0 +1,23 @@
+{
+  "name": "rspack-react-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "rspack serve -c ./rspack.config.js",
+    "build": "rspack build -c ./rspack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rspack/cli": "^0.1.0"
+  },
+  "dependencies": {
+    "@mesh.js/core": "^1.1.25",
+    "react": "18",
+    "react-dom": "18",
+    "spritejs": "^3.8.3"
+  }
+}
