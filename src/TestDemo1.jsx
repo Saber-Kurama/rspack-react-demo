@@ -1,5 +1,6 @@
 import { useEffect, createRef } from "react";
-import qcharts from "@qcharts/core";
+// import qcharts from "@qcharts/core";
+import qcharts from "./qcharts-lib";
 
 export default () => {
   const domRef = createRef();
