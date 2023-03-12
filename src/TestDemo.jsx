@@ -1,17 +1,28 @@
 import { createRef, useEffect } from "react";
-// import { Scene, Sprite } from "spritejs/src/index";
+// import { Scene, Label } from "spritejs";
+import { Scene, Label } from "./spritejs-test/index";
 
 export default () => {
   const domRef = createRef();
   useEffect(() => {
     console.log(domRef);
-    // const scene = new Scene({
-    //   container: domRef.current,
-    //   width: 3080,
-    //   height: 800,
-    //   mode: "stickyTop",
+    const scene = new Scene({
+      container: domRef.current,
+      width: 3080,
+      height: 800,
+      mode: "stickyTop",
+    });
+    const layer = scene.layer();
+    // const box = new Label({
+    //   text: "SpriteJS",
+    //   fontSize: "2rem",
+    //   anchor: [0.5, 0.5],
+    //   pos: [300, 180],
+    //   bgcolor: "white",
+    //   borderWidth: 1,
+    //   padding: 25,
     // });
-    // const layer = scene.layer();
+    // layer.append(box);
 
     // const robot = new Sprite(
     //   "https://p5.ssl.qhimg.com/t01c33383c0e168c3c4.png"
