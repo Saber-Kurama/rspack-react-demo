@@ -33,10 +33,11 @@ export default () => {
     // // const tooltip = new Tooltip();
     // // const legend = new Legend();
     const axisBottom = new Axis().style("grid", false);
+    console.log("axisBottom", axisBottom);
     // const axisLeft = new Axis({ orient: "left" })
     //   .style("axis", false)
     //   .style("scale", false);
-    // chart.append([axisBottom]);
+    chart.append([axisBottom]);
     // bar.dataset.on("mouseEvent", function (...params) {
     //   console.log(params);
     // });

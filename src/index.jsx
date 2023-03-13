@@ -9,8 +9,8 @@ const App = () => {
   return (
     <div>
       the answer to the universe is {answer}
-      <TestDemo />
-      {/* <TestDemo2 /> */}
+      {/* <TestDemo /> */}
+      <TestDemo2 />
     </div>
   );
 };

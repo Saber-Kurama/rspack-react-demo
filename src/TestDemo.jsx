@@ -13,16 +13,16 @@ export default () => {
       mode: "stickyTop",
     });
     const layer = scene.layer();
-    // const box = new Label({
-    //   text: "SpriteJS",
-    //   fontSize: "2rem",
-    //   anchor: [0.5, 0.5],
-    //   pos: [300, 180],
-    //   bgcolor: "white",
-    //   borderWidth: 1,
-    //   padding: 25,
-    // });
-    // layer.append(box);
+    const box = new Label({
+      text: "SpriteJS",
+      fontSize: "2rem",
+      anchor: [0.5, 0.5],
+      pos: [300, 180],
+      bgcolor: "white",
+      borderWidth: 1,
+      padding: 25,
+    });
+    layer.append(box);
 
     // const robot = new Sprite(
     //   "https://p5.ssl.qhimg.com/t01c33383c0e168c3c4.png"
