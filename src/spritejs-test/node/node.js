@@ -74,6 +74,10 @@ export default class Node {
     }
     return meshes;
   }
+
+  forceUpdate() {
+    if (this.parent) this.parent.forceUpdate();
+  }
   getResolution() {
     return { ...this[_resolution] };
   }

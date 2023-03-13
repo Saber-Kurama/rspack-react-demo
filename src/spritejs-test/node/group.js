@@ -25,6 +25,12 @@ export default class Group extends Block {
     return this[_ordered];
   }
 
+  append(...els) {
+    return els.map((el) => {
+      return this.appendChild(el);
+    });
+  }
+
   appendChild(el) {
     el.remove();
     this[_children].push(el);

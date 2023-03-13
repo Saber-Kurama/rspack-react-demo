@@ -107,6 +107,7 @@ export default class Layer extends Group {
     }
     if (clear) this[_renderer].clear();
     const meshes = this.draw();
+    console.log("meshes", meshes);
     if (meshes && meshes.length) {
       this.renderer.drawMeshes(meshes);
       if (this.canvas.draw) this.canvas.draw();
