@@ -81,6 +81,40 @@ class Base extends Node {
   render() {
     console.warn("this function must be rewrited");
   }
+  dispatchEvent(event, obj = emptyObject()) {
+    super.dispatchEvent(event, obj);
+  }
+  defaultAttrs() {
+    return emptyObject();
+  }
+  defaultStyles() {
+    return emptyObject();
+  }
+  baseAttrs() {
+    let attrs = {
+      //动画类型
+      animation: {
+        use: true,
+        duration: 700,
+        useTween: true,
+        easing: "bounceOut",
+      },
+      //位置布局信息
+      clientRect: {
+        left: "10%",
+        top: "10%",
+        right: "10%",
+        bottom: "10%",
+        width: undefined,
+        height: undefined,
+      },
+      //透明度
+      opacity: 1,
+      layer: "default",
+      layoutBy: "rows", //按照哪个数据布局 ['rows','cols']
+    };
+    return attrs;
+  }
   style() {
     return this;
   }
