@@ -1,5 +1,5 @@
 import { useEffect, createRef } from "react";
-import { Scene, Path, Label, Group } from "spritejs";
+import { Scene, Path, Label, Group, Polyline } from "spritejs";
 
 export default () => {
   const domRef = createRef();
@@ -18,12 +18,26 @@ export default () => {
       container: domRef.current,
       width: 1600,
       height: 1600,
-      mode: "stickyHeight",
+      mode: "stickyTop",
     });
     const layer = scene.layer();
 
     const axiosGroup = new Group();
-    axiosGroup.attr({ pos: [0, 0], size: [300, 300], bgcolor: "#cec" });
+    axiosGroup.attr({ pos: [0, 0], size: [1600, 1600], bgcolor: "#fff" });
+    const polyline1 = new Polyline({
+      strokeColor: "red",
+      lineWidth: 1,
+      pos: [0, 50],
+      points: [
+        [0, 0],
+        [1600, 0],
+      ],
+      // animation: {
+      //   form: [0, 10],
+      //   to: [300, 10],
+      // },
+    });
+    axiosGroup.append(polyline1);
     layer.append(axiosGroup);
     const text1 = new Label("SpriteJS.org");
     console.log("text1", text1);
